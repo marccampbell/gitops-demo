@@ -2,6 +2,7 @@ apiVersion: schemas.schemahero.io/v1alpha4
 kind: Table
 metadata:
   name: airport
+  namespace: default
 spec:
   database: airlinedb
   name: airport
