@@ -7,7 +7,7 @@ spec:
   database: airlinedb
   name: airport
   schema:
-    postgres:
+    mysql:
       columns:
       - name: code
         type: char(4)
