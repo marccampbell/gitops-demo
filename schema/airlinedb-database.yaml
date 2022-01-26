@@ -11,3 +11,5 @@ spec:
           secretKeyRef:
             key: uri
             name: postgresql
+  enabledShellCommand: true
+  immediateDeploy: true
