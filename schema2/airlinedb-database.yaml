@@ -1,0 +1,16 @@
+apiVersion: databases.schemahero.io/v1alpha4
+kind: Database
+metadata:
+  name: airlinedb
+  namespace: default
+spec:
+  connection:
+    mysql:
+      uri:
+        valueFrom:
+          secretKeyRef:
+            key: uri
+            name: mysql
+  deploySeedData: true
+  enableShellCommand: true
+  immediateDeploy: true

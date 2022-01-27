@@ -1,0 +1,19 @@
+apiVersion: schemas.schemahero.io/v1alpha4
+kind: Table
+metadata:
+  name: airport
+  namespace: default
+spec:
+  database: airlinedb
+  name: airport
+  schema:
+    mysql:
+      columns:
+      - name: code
+        type: char(4)
+      - constraints:
+          notNull: true
+        name: name
+        type: varchar(255)
+      primaryKey:
+      - code
