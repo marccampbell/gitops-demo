@@ -11,5 +11,6 @@ spec:
           secretKeyRef:
             key: uri
             name: mysql
+  deploySeedData: true
   enableShellCommand: true
   immediateDeploy: true
